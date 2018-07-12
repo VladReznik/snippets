@@ -1,7 +1,11 @@
 <template>
     <div class="top-content">
-        <h2>Some text</h2>
-        <v-btn class="indigo darken-4">Add new snippet</v-btn>
+
+        <div class="add-box">
+            <v-btn class="red darken-3 add-box__btn">
+                <i class="fas fa-plus"></i>
+            </v-btn>
+        </div>
     </div>
 
 </template>
@@ -14,15 +18,19 @@
 
 <style scoped lang="scss">
     .top-content{
-        height: 100px;
+        height: 80px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         align-items: center;
         background: white;
-        padding: 0 25px;
+        padding: 0 15px;
     }
-    button{
-        height: 50px;
-        color: white;
+
+    .add-box{
+        &__btn{
+            margin: 0;
+            color: white;
+        }
     }
+
 </style>

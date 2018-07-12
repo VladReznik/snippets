@@ -4,7 +4,9 @@
     <main class="indigo lighten-4">
       <TopContent/>
       <ContentSubcategory/>
+      <!--<ContentProduct/>-->
     </main>
+    <RightPanel/>
   </div>
 </template>
 
@@ -13,13 +15,17 @@
 import Aside from "@/components/Aside";
 import ContentSubcategory  from "@/components/ContentSubcategory";
 import TopContent from "@/components/TopContent";
-
+import RightPanel from "@/components/RightPanel";
+import ContentProduct  from "@/components/ContentProduct";
 export default {
   name: "home",
   components: {
     Aside,
     ContentSubcategory,
-    TopContent
+    TopContent,
+    RightPanel,
+    ContentProduct
+
   }
 };
 </script>
@@ -28,21 +34,11 @@ export default {
   .home{
     display: flex;
     flex-wrap: wrap;
+    position: relative;
   }
   main{
-    padding-left: 300px;
+    padding-left: 240px;
     width: 100%;
     min-height: 100vh;
   }
-</style>
--style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
 </style>
