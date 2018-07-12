@@ -6,7 +6,9 @@
             </div>
             <div class="search">
                 <input type=search name=search-input class="search__input" placeholder="Search">
-                <v-btn class="search__btn"><i class="fas fa-search"></i></v-btn>
+                <button class="search__btn">
+                    <i class="fas fa-search"></i>
+                </button>
             </div>
         </div>
         <div class="aside-scroll">
@@ -142,7 +144,7 @@
         color: white;
         position: fixed;
         overflow-y: scroll;
-        background-color: #1b1c1d;
+        background-color: #253443;
     }
     a{
         color: white;
@@ -152,7 +154,7 @@
 
         &__item{
             padding: 10px 10px;
-            border-bottom: 1px solid rgba(255,255,255,.75);
+            border-bottom: 1px solid #202a34;
         }
         &__title{
             text-align:left;

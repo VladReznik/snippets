@@ -9,21 +9,27 @@
             <div class="code__item-preview">
                 <img src="../assets/img/previews/1.jpg" class="card__preview-img">
             </div>
-            <div class="code__code-blocks">
+            <div class="code__code-blocks" v-for="(data, index) in tags" :key="index">
                 <div class="code__item">
                     <h3 class="code__title">
                         HTML
                     </h3>
                     <div class="code__code">
-                        Lorem ipsum dolor sit amet, consectetuer adipisc
+                        <pre v-highlightjs>
+                            <code class="html">{{data.html}}</code>
+                        </pre>
+
                     </div>
                 </div>
                 <div class="code__item">
                     <h3 class="code__title">
+
                         CSS
                     </h3>
                     <div class="code__code">
-                        Lorem ipsum dolor sit amet, consectetuer adipisc
+                         <pre v-highlightjs>
+                            <code class="css">{{data.css}}</code>
+                        </pre>
                     </div>
                 </div>
                 <div class="code__item">
@@ -31,9 +37,13 @@
                         JS
                     </h3>
                     <div class="code__code">
-                        Lorem ipsum dolor sit amet, consectetuer adipisc
+                         <pre v-highlightjs>
+                            <code class="javascript">{{data.js}}</code>
+                        </pre>
+
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
@@ -41,8 +51,24 @@
 
 <script>
     export default {
-        name: "ContentProduct"
+        name: "ContentProduct",
+
+        data(){
+            return {
+                tags: [
+                    {
+                        "html":"" +
+                        "<div>1231345345231</div>" +
+                        "<div> asdasd</div>" +
+                        "<div>asdasd</div>",
+                        "css": ".div{background:red;}",
+                        "js" : "var a == //sdf"
+                    },
+                ]
+            }
+        }
     }
+
 </script>
 
 <style scoped lang="scss">
@@ -50,33 +76,29 @@
         padding: 15px 15px;
         box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
         margin: 15px;
-        background: white;
+        background: #232d38;
         &__title{
             text-align: left;
             margin-bottom: 10px;
             display: block;
+            color: white;
+
         }
         &__description{
             text-align: left;
             line-height: 20px;
             padding-bottom: 15px;
             margin-bottom: 0;
-        }
-        .code__title{
-            background: black;
-            font-size: 20px;
-            padding: 5px;
-            text-align: left;
-            color: #C5C8D4;
+            color: white;
         }
         .code{
-            background: #D9D9D9;
+
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             padding: 10px;
             &__item{
-                background: white;
+                background: #202a34;
                 min-height: 150px;
                 width: calc(33.33% - 5px);
                 &-preview{
@@ -92,14 +114,18 @@
                     }
                 }
             }
+            &__title{
+                background: #253443;
+                font-size: 20px;
+                padding: 5px;
+                margin: 0;
+                text-align: left;
+                color: #C5C8D4;
+            }
             &__code-blocks{
                 display: flex;
                 justify-content: space-between;
                 width: 100%;
-                .code__item{
-                    background-color: #2b343e;
-                    color: white;
-                }
             }
             &__code{
                 padding: 10px 5px;

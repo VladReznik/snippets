@@ -9,8 +9,9 @@
 </template>
 
 <style lang="scss">
+@import '@/assets/scss/style.scss';
 #app {
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  font-family: 'PT Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -26,7 +27,6 @@
       color: #42b983;
     }
   }
-
 }
 button{
   cursor: pointer;
@@ -35,4 +35,8 @@ body{
   margin: 0;
   min-width: 1200px;
 }
+
+
+
+
 </style>

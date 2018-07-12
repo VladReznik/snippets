@@ -1,10 +1,9 @@
 <template>
     <div class="top-content">
-
         <div class="add-box">
-            <v-btn class="red darken-3 add-box__btn">
+            <button class="add-box__btn">
                 <i class="fas fa-plus"></i>
-            </v-btn>
+            </button>
         </div>
     </div>
 
@@ -22,7 +21,7 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        background: white;
+        background: #253443;
         padding: 0 15px;
     }
 

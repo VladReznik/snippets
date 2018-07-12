@@ -4,7 +4,7 @@
             <div class="card__item">
                 <div class="card__head">
                     <h3>Title</h3>
-                    <v-btn class="indigo darken-4">Open</v-btn>
+                    <button class="btn">Open</button>
                 </div>
                 <div class="card__preview">
                     <p class="card__description">Description</p>
@@ -14,7 +14,7 @@
             <div class="card__item">
                 <div class="card__head">
                     <h3>Title</h3>
-                    <v-btn class="indigo darken-4">Open</v-btn>
+                    <button class="btn">Open</button>
                 </div>
                 <div class="card__preview">
                     <p class="card__description">Description</p>
@@ -24,7 +24,7 @@
             <div class="card__item">
                 <div class="card__head">
                     <h3>Title</h3>
-                    <v-btn class="indigo darken-4">Open</v-btn>
+                    <button class="btn">Open</button>
                 </div>
                 <div class="card__preview">
                     <p class="card__description">Description</p>
@@ -34,7 +34,7 @@
             <div class="card__item">
                 <div class="card__head">
                     <h3>Title</h3>
-                    <v-btn class="indigo darken-4">Open</v-btn>
+                    <button class="btn">Open</button>
                 </div>
                 <div class="card__preview">
                     <p class="card__description">Description</p>
@@ -44,7 +44,7 @@
             <div class="card__item">
                 <div class="card__head">
                     <h3>Title</h3>
-                    <v-btn class="indigo darken-4">Open</v-btn>
+                    <button class="btn">Open</button>
                 </div>
                 <div class="card__preview">
                     <p class="card__description">Description</p>
@@ -54,7 +54,7 @@
             <div class="card__item">
                 <div class="card__head">
                     <h3>Title</h3>
-                    <v-btn class="indigo darken-4">Open</v-btn>
+                    <button class="btn">Open</button>
                 </div>
                 <div class="card__preview">
                     <p class="card__description">Description</p>
@@ -86,7 +86,6 @@
         justify-content: space-between;
     }
     .card {
-
         &__item {
             background: white;
             display: flex;
@@ -111,6 +110,10 @@
             align-items: center;
             justify-content: space-between;
             padding: 10px 15px;
+            background: #253443;
+            h3{
+                color: white;
+            }
         }
         &__preview {
             position: relative;
@@ -151,5 +154,6 @@
             margin: 0;
             color: white;
         }
+
     }
 </style>

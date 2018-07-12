@@ -3,8 +3,8 @@
     <Aside/>
     <main class="indigo lighten-4">
       <TopContent/>
-      <ContentSubcategory/>
-      <!--<ContentProduct/>-->
+      <!--<ContentSubcategory/>-->
+      <ContentProduct/>
     </main>
     <RightPanel/>
   </div>
@@ -40,5 +40,6 @@ export default {
     padding-left: 240px;
     width: 100%;
     min-height: 100vh;
+    background: #1f2933;
   }
 </style>
