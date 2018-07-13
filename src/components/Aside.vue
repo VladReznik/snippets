@@ -13,127 +13,50 @@
         </div>
         <div class="aside-scroll">
             <div class="category">
-                <div class="category__item">
+                <div class="category__item" v-for="(data, index) in categories" :key="index">
                     <h2 class="category__title">
-                        Category
+                        {{data.name}}
                     </h2>
-                    <ul>
+                    <ul v-for="(data, index) in subcategories" :key="index">
                         <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="category__item">
-                    <h2 class="category__title">
-                        Category
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="category__item">
-                    <h2 class="category__title">
-                        Category
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="category__item">
-                    <h2 class="category__title">
-                        Category
-                    </h2>
-                    <ul>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
-                        </li>
-                        <li>
-                            <a href="#" class="category__link">Subcategory</a>
+                            <a href="#" class="category__link">{{data.name}}</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-
     </aside>
 </template>
 
 <script>
     export default {
-        name: "Aside"
+        name: "Aside",
+        data(){
+            return {
+                categories: [
+                    {
+                        "name":"html/css"
+                    },
+                    {
+                        "name":"svg"
+                    },
+                    {
+                        "name":"other"
+                    },
+                ],
+                subcategories: [
+                    {
+                        "name":"html/css"
+                    },
+                    {
+                        "name":"svg"
+                    },
+                    {
+                        "name":"other"
+                    },
+                ]
+            }
+        }
     }
 </script>
 

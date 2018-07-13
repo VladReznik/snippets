@@ -1,10 +1,12 @@
 <template>
   <div class="home">
     <Aside/>
-    <main class="indigo lighten-4">
+    <main>
       <TopContent/>
-      <!--<ContentSubcategory/>-->
-      <ContentProduct/>
+      <div>
+        <ContentSubcategory/>
+        <ContentProduct/>
+      </div>
     </main>
     <RightPanel/>
   </div>

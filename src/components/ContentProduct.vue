@@ -59,10 +59,10 @@
                     {
                         "html":"" +
                         "<div>1231345345231</div>" +
-                        "<div> asdasd</div>" +
+                        "<div>asdasd</div>" +
                         "<div>asdasd</div>",
                         "css": ".div{background:red;}",
-                        "js" : "var a == //sdf"
+                        "js" : "var a == 3 \\n var n=2"
                     },
                 ]
             }
@@ -72,6 +72,10 @@
 </script>
 
 <style scoped lang="scss">
+    .hljs{
+        background:transparent;
+        white-space: normal;
+    }
     .product{
         padding: 15px 15px;
         box-shadow: 0 10px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
