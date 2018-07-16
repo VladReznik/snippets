@@ -1,12 +1,19 @@
 /*Common Styles For all App*/
-
-.btn{
-    border-style: solid;
-    border-width: 2px;
-    border-color: rgb(0, 138, 255);
-    background-color: rgba(229, 179, 135, 0);
-    color: white;
-    padding: 8px 25px;
-    border-radius: 15px;
-    box-shadow: 0 16x 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.wrapper-page{
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+}
+.content{
+    margin-left: 350px;
+    padding-top: 108px;
+    width: 100%;
+    min-height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
+img{
+    max-width: 100%;
 }

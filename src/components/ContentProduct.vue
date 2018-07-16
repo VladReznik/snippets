@@ -6,6 +6,7 @@
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.Lorem ipsum
         </p>
         <div class="code">
+            <router-link to="/">Перейти к Home</router-link>
             <div class="code__item-preview">
                 <img src="../assets/img/previews/1.jpg" class="card__preview-img">
             </div>

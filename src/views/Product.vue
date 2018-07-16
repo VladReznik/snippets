@@ -1,9 +1,10 @@
+
 <template>
     <div class="wrapper-page">
         <Aside/>
         <TopContent/>
         <div class="content">
-            <ContentSubcategory/>
+            <ContentProduct/>
         </div>
     </div>
 </template>
@@ -11,15 +12,13 @@
 <script>
 
     import Aside from "@/components/Aside";
-    import ContentSubcategory from "@/components/ContentSubcategory";
     import TopContent from "@/components/TopContent";
     import ContentProduct from "@/components/ContentProduct";
 
     export default {
-        name: "home",
+        name: "product",
         components: {
             Aside,
-            ContentSubcategory,
             TopContent,
             ContentProduct
         }
@@ -27,5 +26,4 @@
 </script>
 
 <style lang="scss">
-
 </style>
