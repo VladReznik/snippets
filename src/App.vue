@@ -7,7 +7,6 @@
 <style lang="scss">
 @import '@/assets/scss/style.scss';
 #app {
-  font-family: 'PT Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
@@ -29,7 +28,6 @@ button{
 }
 body{
   margin: 0;
-  min-width: 1200px;
 }
 
 

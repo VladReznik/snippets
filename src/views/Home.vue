@@ -1,9 +1,11 @@
 <template>
     <div class="wrapper-page">
-        <Aside/>
-        <TopContent/>
+        <Header/>
         <div class="content">
-            <ContentSubcategory/>
+            <Aside/>
+            <main>
+                <ContentSubcategory/>
+            </main>
         </div>
     </div>
 </template>
@@ -12,16 +14,14 @@
 
     import Aside from "@/components/Aside";
     import ContentSubcategory from "@/components/ContentSubcategory";
-    import TopContent from "@/components/TopContent";
-    import ContentProduct from "@/components/ContentProduct";
+    import Header from "@/components/Header";
 
     export default {
         name: "home",
         components: {
             Aside,
             ContentSubcategory,
-            TopContent,
-            ContentProduct
+            Header
         }
     };
 </script>

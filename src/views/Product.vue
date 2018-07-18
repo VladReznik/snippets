@@ -1,10 +1,11 @@
-
 <template>
     <div class="wrapper-page">
-        <Aside/>
-        <TopContent/>
+        <Header/>
         <div class="content">
-            <ContentProduct/>
+            <Aside/>
+            <main>
+                <ContentProduct/>
+            </main>
         </div>
     </div>
 </template>
@@ -12,15 +13,15 @@
 <script>
 
     import Aside from "@/components/Aside";
-    import TopContent from "@/components/TopContent";
+    import Header from "@/components/Header";
     import ContentProduct from "@/components/ContentProduct";
 
     export default {
         name: "product",
         components: {
             Aside,
-            TopContent,
-            ContentProduct
+            ContentProduct,
+            Header
         }
     };
 </script>
